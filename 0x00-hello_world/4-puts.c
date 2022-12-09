@@ -2,7 +2,9 @@
 
 /**
  * main - entry point
+ *
  * Description: 'printing a sentence in c'
+ *
  * return always (0), mean success
  */
 
