@@ -2,8 +2,8 @@
 
 /**
  * main - entry point
- *
- * return always (0)
+ * Description: 'printing a sentence in c'
+ * return always (0), mean success
  */
 
 int main(void)
