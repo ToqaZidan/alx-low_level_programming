@@ -1,11 +1,9 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- *
- * main print the size of various type
+ * main - print the size of various type
  *
  * Return: Always 0 (success)
- *
  */
 
 int main(void)
