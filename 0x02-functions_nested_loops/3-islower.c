@@ -5,7 +5,7 @@
  *
  *@c: the lettr to be checked
  *
- * Return 1 if lowercase character otherwise 0
+ * Return: 1 if lowercase character otherwise 0
  */
 
 int _islower(int c)
