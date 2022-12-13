@@ -1,13 +1,16 @@
 #include "main.h"
 
 /**
- * Main - a function that prints the alphabet, in lowercase,
- * followed by a new line.
+ * print_alphabet - a function that prints the alphabet, in lowercase,
+ * followed by a new line ten times.
+ *
+ * @count: variable for counter
+ *@ltr: letter printed
  *
  * Return: 0
  */
 
-void print_alphabet(void);
+void print_alphabet_x10(void)
 {
 	int count = 0;
 	char ltr;
@@ -19,5 +22,4 @@ void print_alphabet(void);
 
 		_putchar('\n');
 	}
-
 }
