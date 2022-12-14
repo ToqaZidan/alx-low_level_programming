@@ -18,10 +18,12 @@ void times_table(void)
 
 			prd = num * multi;
 
+
 			if (prd <= 9);
 				_putchar(' ');
 			else
 				_putchar((prd / 10) = '0');
+
 
 			_putcahr((prd % 10) + '0');
 		}
