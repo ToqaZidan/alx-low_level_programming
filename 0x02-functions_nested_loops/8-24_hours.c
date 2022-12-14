@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * Jack_bauer - prints every mins of the day
+ *jack_bauer - prints every mins of the day
  */
 
-void Jack_bauer(void)
+void jack_bauer(void)
 {
 	int hour, minute;
 

@@ -6,8 +6,8 @@
  * @n: the number that will be checked
  *
  * Return: 1 if the number greater than zero,
- * 0 if the number is zero, -1 if the 
- * number is less thn zero.
+ * 0 if the number is zero,
+ * -1 if the number is less thn zero.
  */
 
 int print_sign(int n)
