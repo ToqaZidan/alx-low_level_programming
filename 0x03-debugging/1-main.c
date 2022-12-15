@@ -10,7 +10,7 @@ int main(void)
 {
 	int i;
 
-	printf("Infinite loop incomiung :(\n");
+	printf("Infinite loop incoming :(\n");
 
 	i = 0;
 
