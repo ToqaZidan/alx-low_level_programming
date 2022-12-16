@@ -5,7 +5,7 @@
  * @n: number of \ to be printed
  */
 
-void print_digonal(int n)
+void print_diagonal(int n)
 
 {
 	int len, space;
