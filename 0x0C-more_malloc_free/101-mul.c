@@ -92,28 +92,28 @@ void *mul_array(char *a1, int len1, char a2, char *a3, int lena)
  * print_array - print all digits of array.
  * @nb: number of elements to print.
  * @a: array of elements.
- *  /
- *  void print_array(char *a, int nb)
- *  {
- *  int i = 0;
- *
- *  while (a[i] == '0' && (i + 1) < nb)
- *  {
- *  i++;
- *  }
- *  for (; i < nb; i++)
- *  {
- *  _putchar(a[i]);
- *  }
- *  _putchar('\n');
- *  }
- *
- */**
-main - print the multiplication of 2 numbers.
-@argc: array length.
-@argv: array.
-Return: 0.
-/
+ */
+void print_array(char *a, int nb)
+{
+	int i = 0;
+
+	while (a[i] == '0' && (i + 1) < nb)
+	{
+		i++;
+	}
+	for (; i < nb; i++)
+	{
+		_putchar(a[i]);
+	}
+	_putchar('\n');
+}
+
+/**
+ * main - print the multiplication of 2 numbers.
+ * @argc: array length.
+ * @argv: array.
+ * Return: 0.
+ */
 
 int main(int argc, char *argv[])
 {
