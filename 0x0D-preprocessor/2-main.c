@@ -1,20 +1,13 @@
 #include <stdio.h>
 /**
  * main - Function that prints the file name
- * @argc: number of command line arguments passed to the program
- * @argv: array of strings that holds the arguments
+ * Description: programe that prints the name of a file
  *
- * Return: 0 if success, 1 if failur 
+ * Return: 0 (success) 
  */
 
-int main(int argc, char *argv[]) 
+int main(void)
 {
-	if (argc < 2) 
-	{
-		printf("Please provide a file name as an argument.\n");
-		return (1);
-	}
-
-	printf("The file name is: %s\n", argv[1]);
+	_putchar("%s\n", _FILE_);
 	return (0);
 }
