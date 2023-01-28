@@ -1,15 +1,16 @@
-ECTION .data
-msg:	db "Hello, Holberton", 0
-fmt:	db "%s", 10, 0
+section .data
+msg:	db "Hello, Holberton",10 ;10 is ASCII for a new line
 
-SECTION .text
-extern printf
-global main
-main:
-mov esi, msg
-mov edi, fmt
-mov eax, 0
-call printf
+section .text
+global _start
 
-mov eax, 0
-ret
+_start:
+    mov rax, 1
+    mov rdi, 1
+    mov rsi, msg
+    mov rdx, 13
+    syscall
+ 
+    mov rax, 60
+    mov rdi, 0
+    syscall
