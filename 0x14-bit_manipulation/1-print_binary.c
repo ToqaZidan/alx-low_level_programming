@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 /**
  * print_binary - prints the binary representation of a numnber
  * @n: unsigned long, number to be represented in binary
