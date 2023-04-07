@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "hash_table.h"
+#include "hash_tables.h"
 
 /**
  * hash_table_create - Function that Creates a hash table.
@@ -18,10 +18,9 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return (NULL);
 
 	ht->size = size;
-	ht->count = 0; /* initialize count to 0 */
-	ht->slots = calloc(size, sizeof(hash_node_t *));
+	ht->array = calloc(size, sizeof(hash_node_t *));
 
-	if (ht->slots == NULL)
+	if (ht->array == NULL)
 		free(ht);
 	return (NULL);
 
