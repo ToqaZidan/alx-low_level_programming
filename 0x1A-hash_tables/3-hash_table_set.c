@@ -12,23 +12,23 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *new_node;
-	char *cpvalue;
-	unsigned long int index;
+	char *cpdvalue;
+	unsigned long int index, ix;
 
 	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
 		return (0);
 
-	cpvalue = strdup(value);
-	if (cpvalue == NULL)
+	cpdvalue = strdup(value);
+	if (cpdvalue == NULL)
 		return (0);
 
 	index = key_index((const unsigned char *)key, ht->size);
-	for (ht->array[index]; index++)
+	for (ix = index; ht->array[ix]; ix++)
 	{
-		if (strcmp(ht->array[index]->key, key) == 0)
+		if (strcmp(ht->array[ix]->key, key) == 0)
 		{
-			free(ht->array[index]->value);
-			ht->array[index]->value = cpvalue;
+			free(ht->array[ix]->value);
+			ht->array[ix]->value = cpdvalue;
 			return (1);
 		}
 	}
@@ -36,7 +36,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new_node = malloc(sizeof(hash_node_t));
 	if (new_node == NULL)
 	{
-		free(cpvalue);
+		free(cpdvalue);
 		return (0);
 	}
 	new_node->key = strdup(key);
@@ -45,7 +45,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free(new_node);
 		return (0);
 	}
-	new_node->value = cpvalue;
+	new_node->value = cpdvalue;
 	new_node->next = ht->array[index];
 	ht->array[index] = new_node;
 
