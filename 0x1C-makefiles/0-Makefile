@@ -1,0 +1,4 @@
+all:  school
+
+school: main.c school.c
+	gcc -Wall -Wextra  main.c school.c -o school
